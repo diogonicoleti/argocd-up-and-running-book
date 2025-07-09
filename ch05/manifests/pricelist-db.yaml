@@ -26,9 +26,11 @@ spec:
         env:
         - name: MYSQL_DATABASE
           value: pricelist
+        - name: MYSQL_USER
+          value: pricelist
         - name: MYSQL_PASSWORD
           value: pricelist
-        - name: MYSQL_USER
+        - name: MYSQL_ROOT_PASSWORD
           value: pricelist
         volumeMounts:
         - mountPath: /var/lib/mysql/data
